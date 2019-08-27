@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Wizards Gallery</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        *{
+            user-select: none;
+        }
+        body {
+            padding-top: 60px;
+            background: #fcfcfc;
+        }
+        
+        a {
+            color: #282A89;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+        
+        .bg-custom {
+            background: rgb(36, 50, 0);
+            background: linear-gradient(90deg, rgba(36, 30, 0, 0.9444152661064426) 0%, rgba(0, 212, 255, 1) 55%, rgba(36, 30, 0, 0.9248074229691877) 100%, rgba(0, 212, 255, 1) 100%);
+        }
+
+        .dropdown-menu{
+            padding: 0;
+            margin: .5rem 0 0;
+        }
+
+        .dropdown-item:hover{
+            color: white;
+        }
+
+        .dropdown-item{
+            /*text-align: center !important;*/
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .nav-link{
+           letter-spacing: 2px; 
+        }
+
+
+        .dropdown-item:hover{
+            background: rgb(36, 50, 0);
+            background: linear-gradient(90deg, rgba(36, 30, 0, 0.9444152661064426) 0%, rgba(0, 212, 255, 1) 55%, rgba(36, 30, 0, 0.9248074229691877) 100%, rgba(0, 212, 255, 1) 100%);
+        }
+
+        @media(max-width: 784px){
+            .card-columns {
+                column-count: 1;
+                -webkit-column-gap: 1.25rem;
+                -moz-column-gap: 1.25rem;
+                column-gap: 1.25rem;
+                orphans: 1;
+                widows: 1;
+            }
+        }
+
+        @media(min-width: 785px) AND (max-width: 1305px){
+            .card-columns {
+                column-count: 2;
+                -webkit-column-gap: 1.25rem;
+                -moz-column-gap: 1.25rem;
+                column-gap: 1.25rem;
+                orphans: 1;
+                widows: 1;
+            }
+        }
+    </style>
+</head>
+
+<body onresize="widthControll()">
+    <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-custom fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="//www.wizardsbd.com/banners/adgallery/index.php"> <img src="//www.wizardsbd.com/banners/adgallery/img/logo.png" style="height: 35px; width: auto;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="//www.wizardsbd.com/banners/adgallery/inner.php">CONTENT</a>
+                    </li> -->
+                    <li class="nav-item dropdown"><a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">CATEGORY</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">animated</a></li>
+                            
+                        </ul>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="//www.wizardsbd.com/banners/adgallery/index.php">HOME
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <!-- /.container -->
+
+    <div class="container-fluid">
+                    <div class="row">
+                    
+                    <div class="col-12 col-sm-6 col-md-4 text-center p-3">
+                        <a href="inner.php?creative_id=12">
+                            <img src="https://www.wizardsbd.com/banners/adgallery/dashboard/uploads/1566283117.jpg" style="height: auto; max-width: 300px;" alt="">
+                            <div class="p-2" style="color: #000; font-family: george; font-size: 18px; font-weight: bold;">
+                                Banglalink Eid Ul Adha Quiz                            </div>
+                        </a>
+                    </div>
+                    
+                    
+                    
+                    <div class="col-12 col-sm-6 col-md-4 text-center p-3">
+                        <a href="inner.php?creative_id=44">
+                            <img src="https://www.wizardsbd.com/banners/adgallery/dashboard/uploads/1566392621.PNG" style="height: auto; max-width: 300px;" alt="">
+                            <div class="p-2" style="color: #000; font-family: george; font-size: 18px; font-weight: bold;">
+                                Runner Lead Generation Campaign                            </div>
+                        </a>
+                    </div>
+                    
+
+                </div>
+
+                
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-custom">
+        <div class="container-fluid">
+            <p class="m-0 text-center text-white">&copy; <span id="copy_year"></span> <a href="https://www.wizardsbd.com/" style="color: white;">Wizards</a>, All rights reserved.</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        //post time
+        $('#post_time').html((new Date).getDate() + " " + monthConverter((new Date).getMonth()) + " " + (new Date).getFullYear());
+
+        //copyright year
+        $('#copy_year').html((new Date).getFullYear());
+
+        function monthConverter(indexMonth) {
+
+            var monthArray = [
+                "January", "February", "March", "April", "May", "June", "July", "August", "September", "Octobor", "November", "December"
+            ]
+
+            return monthArray[indexMonth];
+
+        }
+
+        // widthControll
+        function widthControll() {
+            var w = window.outerWidth;
+            console.log(w);
+            bigBanner(w);
+            semiBanner(w);
+            tallBanner(w);
+        }
+
+        function bigBanner(w) {
+            if (w < 1350) {
+                $('#97090').css("display", "none");
+            } else {
+                $('#97090').css("display", "block");
+            }
+        }
+
+        function semiBanner(w) {
+            if (w < 1050) {
+                $('#72890').css("display", "none");
+            } else {
+                $('#72890').css("display", "block");
+            }
+        }
+
+        function tallBanner(w) {
+            if (w < 785) {
+                $('#160600').css("display", "none");
+            } else {
+                $('#160600').css("display", "block");
+            }
+        }
+
+        $('#mobile').css("display", "none");
+
+        var isMobile = false; //initiate as false
+        // device detection
+        if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0, 4))) {
+            isMobile = true;
+            $('#97090').css("display", "none");
+            $('#72890').css("display", "none");
+            $('#160600').css("display", "none");
+            $('#mobile').css("display", "block");
+        }
+        console.log(isMobile);
+    </script>
+</body>
+
+</html>
